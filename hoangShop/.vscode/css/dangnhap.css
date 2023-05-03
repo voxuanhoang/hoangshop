@@ -1,0 +1,301 @@
+body{
+  font-family:"Fantasy", sans-serif;
+}
+header{
+  background-image: linear-gradient(0,#96CCCC,#008080);
+  height: 120px;
+  
+}
+header{
+  backdrop-filter: blur(10p0x);
+}
+.grid{
+ width: 1300px;
+ padding: 20px; 
+ margin: 0 auto;
+}
+.search-123{
+  display: grid;
+  place-items: center;
+}
+.giohang{
+  color: white;
+  font-size: 20px;
+  background-color: #66CCCC;
+  padding: 15px;
+  border-radius: 10px;
+}
+.giohang:hover{
+  background-color:#36CCCC ;
+}
+a{text-decoration: none}
+.button{
+  border: none;
+  border-color:white;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding:9px;
+  width: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #008080;
+}
+.two{
+  display: flex;
+  justify-content: space-around;
+}
+.logo{
+  width: 130px;
+  border-radius: 10px;
+}
+.navbar{
+  background-color: rgb(239, 235, 235);
+  border-bottom: 3px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+ }
+ .item{
+  display: flex;
+  position: relative;
+}
+.item-has:hover .item-noti{
+  display: block;
+}
+.item-list:hover{
+  background-color: #d2e2e2;
+}
+.item-list{
+  
+  display:inline-block;
+  padding: 10px 15px;
+  color: black;
+  font-weight: bold
+}
+.item-noti{
+  background-color: whitesmoke;
+  border: 3px solid gainsboro;
+  border-radius: 5px;
+  position: absolute;
+  width: 200px;
+  transform-origin: 20px top ;
+  animation: notifi ease-in 0.2s;
+  display: none;
+}
+.item-noti::before{
+  content: "";
+  border:10px solid;
+  border-color: transparent transparent whitesmoke transparent;
+  position: absolute;
+  top: -18px;
+  left: 12px;
+}
+@keyframes notifi {
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.item-noti-0{
+  margin: 0px;
+ padding: 10px;
+}
+
+.item-noti-2{
+  color: black;
+}
+
+li{
+  padding: 10px;
+}
+.item-noti-1:hover {
+  background-color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+.footer-top-inf-title{
+  width: 100%;
+  height: 70px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.footer-top-inf-title i{
+  font-size:25px;
+  padding-right: 10px;
+}
+.footer-top-inf-title-1{
+  cursor: pointer;
+}
+.footer-top-inf-dec{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-top-inf-dec-1 i{
+  /* color: black; */
+  padding-right: 10px;
+}
+.footer-bottom{
+  margin-top: 50px;
+  background-color: gray;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.footer-top-inf-dec{
+border-bottom: 2px dotted gray;
+padding-bottom: 20px;
+}
+.modal{
+  padding: 50px 0;
+  display: grid;
+  place-items: center;
+  background-image: url(https://www.animatedimages.org/data/media/1643/animated-water-image-0020.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal_overlay{
+  width: 100%;
+  height: 100%;
+}
+.modal_body-title{
+  display: flex;
+  justify-content: space-between;
+}
+.modal_body{
+  position: relative;
+  width: 500px;
+  height: 580px;
+  background-color: gainsboro;
+  margin: auto;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid wheat;
+}
+.modal_body-login{
+  position: relative;
+  width: 500px;
+  height: 450px;
+  background: transparent;
+  margin: auto;
+  border-radius: 10px;
+  border: 2px solid wheat;
+}
+.modal_body-title{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modal_body-form{
+  padding: 20px;
+}
+.dangky{
+  width: 415px;
+  padding: 10px;
+  margin: 10px;
+}
+.dangky-1{
+  width: 270px;
+  padding:10px;
+  margin: 10px  0px 10px 10px;
+}
+.dangky-2{
+  width: 140px;
+  padding: 10px;
+  margin: 0px;
+}
+.modal_body-word{
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.modal_body_back{
+  text-align: right;
+  margin-top: 30px;
+  padding: 10px;
+}
+.back-footer{
+  height: 40px;
+  width: 100px;
+  border: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.back-footer:hover{
+  background-color: LightGray;
+}
+.login-footer{
+  height: 40px;
+  width: 100px;
+  border: white;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
+.login-footer:hover{
+  background-color: rgb(188, 19, 19);
+}
+.modal_body-social{
+  display: flex;
+  justify-content: space-around;
+  background-color: gainsboro;
+  margin: 10px;
+  padding: 10px;
+  background: transparent;
+}
+.social{
+  color:white;
+  background-color: #3A5A98;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.social:hover{
+  background-color: darkblue;
+}
+.social i{
+  padding-right: 5px;
+}
+.social-g{
+  width: 200px;
+  background-color: whitesmoke;
+  padding:6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: blue;
+}
+.social-g:hover{
+  background-color: rgb(234, 223, 209);
+}
+.social-g img{
+  padding-right: 5px;
+  width: 18px;
+}
+.modal_body-sp{
+  text-align: right;
+  padding:10px;
+  
+}
